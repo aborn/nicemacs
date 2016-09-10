@@ -1,2 +1,2 @@
 # nicemacs
-next incredible creative emacs
+Yeah, nice emacs, 不折腾！！
