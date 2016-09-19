@@ -6,24 +6,36 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+;; +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+;; -----------------------------------------------------------------------------
+;;; init.el
 (when (string= system-type "darwin")       ;; mac系统用command代替alter作为键
   (setq mac-option-modifier 'super)
   (setq mac-command-modifier 'meta))
 
+;; -----------------------------------------------------------------------------
+;; 加载文件的path
 (add-to-list 'load-path "~/.emacs.d/hotkey")
-(require 'basic-key)
+(add-to-list 'load-path "~/.emacs.d/nice")
+(load-file "~/.emacs.d/space/funcs.el")
 
+(require 'basic-key)
+(require 'move-swift)
+
+;; -----------------------------------------------------------------------------
+;; 配置elpa的源
 (setq package-archives
       '(
         ("popkit" . "https://elpa.popkit.org/packages/")
-        ;;("melpa" . "melpa.org/packages/")
-        ;;("org"   . "orgmode.org/elpa/")
-        ;;("gnu"   . "elpa.gnu.org/packages/")
+        ;;("melpa" . "https://melpa.org/packages/")
+        ;;("org"   . "https://orgmode.org/elpa/")
+        ;;("gnu"   . "https://elpa.gnu.org/packages/")
         ))
 
+;; -----------------------------------------------------------------------------
+;; 配置主题
 (require 'doom-themes)
 (load-theme 'doom-one t)
-
 ;;; OPTIONAL
 ;; brighter source buffers
 (add-hook 'find-file-hook 'doom-buffer-mode)
@@ -32,7 +44,9 @@
 ;; Custom neotree theme
 (require 'doom-neotree)
 
-
+;;; init.el ends here
+;; -----------------------------------------------------------------------------
+;; +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
