@@ -4,3 +4,6 @@
   (setq mac-command-modifier 'meta))
 
 
+(add-to-list 'load-path "~/.emacs.d/hotkey")
+
+(require 'basic-key)
