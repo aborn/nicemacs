@@ -1,0 +1,1 @@
+(define-package "async" "20160712.1335"   "Asynchronous processing in Emacs"   'nil   :url "https://github.com/jwiegley/emacs-async"   :keywords '("async"))
