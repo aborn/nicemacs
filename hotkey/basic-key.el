@@ -2,6 +2,9 @@
 (global-set-key "\M-j" 'find-file)
 (global-set-key "\C-j" 'switch-to-buffer)
 
+(global-set-key (kbd "C-j") 'helm-buffers-list)
+(global-set-key (kbd "M-j") 'helm-find-files)
+
 (global-set-key (kbd "C-a") 'spacemacs/smart-move-beginning-of-line)
 ;; (global-set-key (kbd "C-w") 'spacemacs/backward-kill-word-or-region)
 (global-set-key [C-backspace] 'spacemacs/backward-kill-word-or-region)
