@@ -21,7 +21,6 @@
         ;;("gnu"   . "elpa.gnu.org/packages/")
         ))
 
-(package-initialize)
 (require 'doom-themes)
 (load-theme 'doom-one t)
 
