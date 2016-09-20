@@ -42,7 +42,7 @@
 (show-paren-mode t)                        ;; display paren match
 
 ;; backup
-(setq backup-directory-alist '(("." . "~/.emacs.d/.saves")))
+(setq backup-directory-alist `(("." . "~/.emacs.d/.saves")))
 (setq backup-by-copying t)                 ;; use backup mode for save
 (setq delete-old-versions t
       kept-new-versions 6
