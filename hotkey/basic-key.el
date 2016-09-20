@@ -16,4 +16,9 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
+;; ace-jump releated
+(global-set-key (kbd "M-n") 'ace-jump-mode)
+(eval-after-load "helm"
+  '(define-key helm-map (kbd "M-n") 'ace-jump-helm-line))
+
 (provide 'basic-key)
