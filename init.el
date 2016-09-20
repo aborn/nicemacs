@@ -36,6 +36,7 @@
 ;; 一些最基本的配置
 (prefer-coding-system 'utf-8)
 (tool-bar-mode -1)                         ;; 关闭toobar
+(menu-bar-mode -1)                         ;; turn off menu-bar
 (toggle-frame-maximized)                   ;; 最大化frame
 
 ;; -----------------------------------------------------------------------------
