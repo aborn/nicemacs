@@ -60,11 +60,12 @@
 (add-hook 'find-file-hook 'doom-buffer-mode)
 ;; brighter minibuffer when active
 (add-hook 'minibuffer-setup-hook 'doom-brighten-minibuffer)
-;; Custom neotree theme
+
+;; 这个主题里的neotree
 ;; 这里需要安装https://github.com/domtronn/all-the-icons.el需要的字体才能用 doom-neotree
 ;;(require 'doom-neotree)
 
-;; spaceline
+;; 配置mode-line样式为spaceline
 (require 'spaceline-config)
 ;; (spaceline-spacemacs-theme)
 (spaceline-emacs-theme)
@@ -81,7 +82,7 @@
 (setq neo-force-change-root t)     ;; 当root改变时，是否强制相应改变而不需要询问
 
 ;; (setq neo-dont-be-alone t)
-
+(require 'nice-helm-config)
 (load-file "~/.emacs.d/hotkey/nice-key.el")
 ;;; init.el ends here
 ;; -----------------------------------------------------------------------------
