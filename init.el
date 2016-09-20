@@ -61,6 +61,11 @@
 ;; Custom neotree theme
 (require 'doom-neotree)
 
+;; spaceline
+(require 'spaceline-config)
+;; (spaceline-spacemacs-theme)
+(spaceline-emacs-theme)
+
 ;; -----------------------------------------------------------------------------
 ;; company
 (add-hook 'after-init-hook 'global-company-mode)
@@ -76,7 +81,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (ace-jump-helm-line ace-jump-mode company doom-themes))))
+    (spaceline ace-jump-helm-line ace-jump-mode company doom-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
