@@ -14,7 +14,7 @@
   (setq mac-command-modifier 'meta))
 
 ;; -----------------------------------------------------------------------------
-;; 加载文件的path
+;; 加载文件的path 
 (add-to-list 'load-path "~/.emacs.d/hotkey")
 (add-to-list 'load-path "~/.emacs.d/nice")
 (load-file "~/.emacs.d/space/funcs.el")
@@ -40,9 +40,10 @@
 (toggle-frame-maximized)                   ;; 最大化frame
 (electric-pair-mode 1)                     ;; turn on pair auto complete
 (show-paren-mode t)                        ;; display paren match
+
 ;; backup
 (setq backup-directory-alist '(("." . "~/.emacs.d/.saves")))
-(setq backup-by-copying t)
+(setq backup-by-copying t)                 ;; use backup mode for save
 (setq delete-old-versions t
       kept-new-versions 6
       kept-old-versions 2
