@@ -11,7 +11,9 @@
 ;;; init.el
 (when (string= system-type "darwin")       ;; mac系统用command代替alter作为键
   (setq mac-option-modifier 'super)
-  (setq mac-command-modifier 'meta))
+  (setq mac-command-modifier 'meta)
+  (set-face-attribute 'default nil :height 150)  ;; 15号字体
+  )
 
 ;; -----------------------------------------------------------------------------
 ;; 加载文件的path 
