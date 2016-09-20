@@ -59,7 +59,8 @@
 ;; brighter minibuffer when active
 (add-hook 'minibuffer-setup-hook 'doom-brighten-minibuffer)
 ;; Custom neotree theme
-(require 'doom-neotree)
+;; 这里需要安装https://github.com/domtronn/all-the-icons.el需要的字体才能用 doom-neotree
+;;(require 'doom-neotree)
 
 ;; spaceline
 (require 'spaceline-config)
@@ -74,6 +75,9 @@
 ;; neotree
 (setq neo-toggle-window-keep-p t)
 (setq neo-show-hidden-files nil)
+(setq neo-show-hidden-files nil)   ;; 不显示隐藏文件
+(setq neo-force-change-root t)     ;; 当root改变时，是否强制相应改变而不需要询问
+
 ;; (setq neo-dont-be-alone t)
 
 (load-file "~/.emacs.d/hotkey/nice-key.el")
