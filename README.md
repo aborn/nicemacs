@@ -17,3 +17,7 @@ $ sh -c "$(curl -fsSL https://raw.github.com/aborn/nicemacs/master/scripts/insta
 1. emacs新用户，这些用户可以基于这个最基本配置进行添加自己的配置，即使不添加自己的配置也能使用
 2. 不适合emacs老手
 
+## 界面
+mac osx
+![](images/mac.png "mac osx")
+
