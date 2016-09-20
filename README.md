@@ -8,6 +8,7 @@ Yeah, nice emacs, 不折腾！！
 
 ## 一键安装
 在命令行下执行以下命令进行安装：
+
 ```shell
 $ sh -c "$(curl -fsSL https://raw.github.com/aborn/nicemacs/master/scripts/install.sh)"
 ```
