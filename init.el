@@ -38,6 +38,15 @@
 (tool-bar-mode -1)                         ;; 关闭toobar
 (menu-bar-mode -1)                         ;; turn off menu-bar
 (toggle-frame-maximized)                   ;; 最大化frame
+(electric-pair-mode 1)                     ;; turn on pair auto complete
+(show-paren-mode t)                        ;; display paren match
+;; backup
+(setq backup-directory-alist '(("." . "~/.emacs.d/.saves")))
+(setq backup-by-copying t)
+(setq delete-old-versions t
+      kept-new-versions 6
+      kept-old-versions 2
+      version-control t)
 
 ;; -----------------------------------------------------------------------------
 ;; 配置主题
