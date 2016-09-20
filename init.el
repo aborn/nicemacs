@@ -70,6 +70,13 @@
 ;; company
 (add-hook 'after-init-hook 'global-company-mode)
 
+;; -----------------------------------------------------------------------------
+;; neotree
+(setq neo-toggle-window-keep-p t)
+(setq neo-show-hidden-files nil)
+;; (setq neo-dont-be-alone t)
+
+(load-file "~/.emacs.d/hotkey/nice-key.el")
 ;;; init.el ends here
 ;; -----------------------------------------------------------------------------
 ;; +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -81,7 +88,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (spaceline ace-jump-helm-line ace-jump-mode company doom-themes))))
+    (neotree spaceline ace-jump-helm-line ace-jump-mode company doom-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
