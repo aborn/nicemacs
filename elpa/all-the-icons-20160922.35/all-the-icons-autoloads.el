@@ -1,10 +1,10 @@
 ;;; all-the-icons-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
 ;;;### (autoloads nil nil ("all-the-icons-faces.el" "all-the-icons-pkg.el"
-;;;;;;  "all-the-icons.el") (22495 28900 374406 525000))
+;;;;;;  "all-the-icons.el") (22499 49088 189102 0))
 
 ;;;***
 

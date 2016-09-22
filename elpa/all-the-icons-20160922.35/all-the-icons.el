@@ -128,6 +128,7 @@
     ("\\.p12$"          all-the-icons-octicon "key"                     :v-adjust 0.0 :face all-the-icons-dorange)
     ("\\.crt$"          all-the-icons-octicon "key"                     :v-adjust 0.0 :face all-the-icons-lblue)
     ("\\.pub$"          all-the-icons-octicon "key"                     :v-adjust 0.0 :face all-the-icons-blue)
+    ("\\.gpg$"          all-the-icons-octicon "key"                     :v-adjust 0.0 :face all-the-icons-lblue)
 
     ("^TODO$"           all-the-icons-octicon "checklist"               :v-adjust 0.0 :face all-the-icons-lyellow)
     ("^LICENSE$"        all-the-icons-octicon "book"                    :height 1.0 :v-adjust 0.0 :face all-the-icons-blue)
@@ -157,6 +158,8 @@
     ("^Brewfile$"       all-the-icons-faicon "beer"                     :face all-the-icons-lsilver)
     ("\\.npmignore"     all-the-icons-fileicon "npm"                    :face all-the-icons-dred)
     ("^package.json$"   all-the-icons-fileicon "npm"                    :face all-the-icons-red)
+
+    ("\.xml$"           all-the-icons-faicon "file-code-o"              :height 0.95 :face all-the-icons-lorange)
 
     ;; ;; AWS
     ("^stack.*.json$"   all-the-icons-alltheicon "aws"                  :face all-the-icons-orange)
@@ -216,6 +219,7 @@
     ("\\.prol?o?g?$"    all-the-icons-alltheicon "prolog"               :height 1.1  :face all-the-icons-lmaroon)
     ("\\.py$"           all-the-icons-alltheicon "python"               :height 1.0  :face all-the-icons-dblue)
 
+    ("\\.rkt$"          all-the-icons-fileicon "racket"                 :height 1.2 :face all-the-icons-red)
     ("\\.gem$"          all-the-icons-alltheicon "ruby-alt"             :face all-the-icons-red)
     ("\\.rb$"           all-the-icons-octicon "ruby"                    :v-adjust 0.0 :face all-the-icons-lred)
     ("\\.rs$"           all-the-icons-alltheicon "rust"                 :height 1.2  :face all-the-icons-maroon)
@@ -223,7 +227,7 @@
     ("\\.r[ds]?x?$"     all-the-icons-fileicon "R"                      :face all-the-icons-lblue)
 
     ("\\.scala$"        all-the-icons-alltheicon "scala"                :face all-the-icons-red)
-
+    ("\\.scm$"          all-the-icons-fileicon   "scheme"               :height 1.2 :face all-the-icons-red)
     ("\\.swift$"        all-the-icons-alltheicon "swift"                :height 1.0 :v-adjust -0.1 :face all-the-icons-green)
 
     ("-?spec\\.js$"     all-the-icons-alltheicon "jasmine"              :height 0.9 :v-adjust -0.1 :face all-the-icons-lpurple)
@@ -242,7 +246,7 @@
 
     ("\\.csx?$"         all-the-icons-alltheicon "csharp-line"          :face all-the-icons-dblue)
 
-    ("\\.clj$"          all-the-icons-alltheicon "clojure"              :height 1.0  :face all-the-icons-blue)
+    ("\\.cljc?$"        all-the-icons-alltheicon "clojure"              :height 1.0  :face all-the-icons-blue)
     ("\\.cljs$"         all-the-icons-alltheicon "clojure"              :height 1.0  :face all-the-icons-dblue)
 
     ("\\.coffee$"       all-the-icons-alltheicon "coffeescript"         :height 1.0  :face all-the-icons-maroon)
@@ -288,7 +292,7 @@
     ("\\.react"         all-the-icons-alltheicon "react"                :height 1.1  :face all-the-icons-lblue)
     ("\\.js$"           all-the-icons-alltheicon "javascript"           :height 0.9  :face all-the-icons-yellow)
     ("\\.es[0-9]$"      all-the-icons-alltheicon "javascript"           :height 0.9  :face all-the-icons-yellow)
-    ("\\.jsx$"          all-the-icons-fileicon "jsx"                    :height 0.8  :face all-the-icons-dyellow)
+    ("\\.jsx$"          all-the-icons-fileicon "jsx-2"                  :height 0.8  :face all-the-icons-dyellow)
     ("\\.njs$"          all-the-icons-alltheicon "nodejs"               :height 1.2  :face all-the-icons-lgreen)
     ("^webpack"         all-the-icons-fileicon "webpack"                :face all-the-icons-lblue)
 
@@ -382,27 +386,32 @@
 
 (defvar all-the-icons-mode-icon-alist
   '(
-    (emacs-lisp-mode          all-the-icons-fileicon "elisp"              :v-adjust -0.1)
-    (dired-mode               all-the-icons-octicon "file-directory"      :v-adjust 0.0)
-    (lisp-interaction-mode    all-the-icons-fileicon "lisp"               :v-adjust -0.1)
-    (js2-mode                 all-the-icons-alltheicon "javascript-badge" :v-adjust -0.1)
-    (term-mode                all-the-icons-octicon "terminal"            :v-adjust 0.0)
-    (eshell-mode              all-the-icons-octicon "terminal"            :v-adjust 0.0)
-    (magit-refs-mode          all-the-icons-octicon "git-branch"          :v-adjust 0.0)
-    (magit-process-mode       all-the-icons-octicon "mark-github"         :v-adjust 0.0)
-    (magit-diff-mode          all-the-icons-octicon "git-compare"         :v-adjust 0.0)
-    (ediff-mode               all-the-icons-octicon "git-compare"         :v-adjust 0.0)
-    (comint-mode              all-the-icons-faicon "terminal"             :v-adjust 0.0)
-    (eww-mode                 all-the-icons-faicon "firefox"              :v-adjust -0.1)
-    (org-agenda-mode          all-the-icons-octicon "checklist"           :v-adjust 0.0)
-    (cfw:calendar-mode        all-the-icons-octicon "calendar"            :v-adjust 0.0)
-    (ibuffer-mode             all-the-icons-faicon "files-o"              :v-adjust 0.0)
-    (messages-buffer-mode     all-the-icons-faicon "stack-overflow"       :v-adjust -0.1)
-    (help-mode                all-the-icons-faicon "info"                 :v-adjust -0.1)
-    (benchmark-init/tree-mode all-the-icons-octicon "dashboard"           :v-adjust 0.0)
-    (jenkins-mode             all-the-icons-fileicon "jenkins")
-    (magit-popup-mode         all-the-icons-alltheicon "git")
-    (magit-status-mode        all-the-icons-alltheicon "git")
+    (emacs-lisp-mode           all-the-icons-fileicon "elisp"              :v-adjust -0.1)
+    (inferior-emacs-lisp-mode  all-the-icons-fileicon "elisp"              :v-adjust -0.1)
+    (dired-mode                all-the-icons-octicon "file-directory"      :v-adjust 0.0)
+    (lisp-interaction-mode     all-the-icons-fileicon "lisp"               :v-adjust -0.1)
+    (org-mode                  all-the-icons-fileicon "org"                :v-adjust 0.0)
+    (js2-mode                  all-the-icons-alltheicon "javascript"       :v-adjust -0.1)
+    (term-mode                 all-the-icons-octicon "terminal"            :v-adjust 0.0)
+    (eshell-mode               all-the-icons-octicon "terminal"            :v-adjust 0.0)
+    (magit-refs-mode           all-the-icons-octicon "git-branch"          :v-adjust 0.0)
+    (magit-process-mode        all-the-icons-octicon "mark-github"         :v-adjust 0.0)
+    (magit-diff-mode           all-the-icons-octicon "git-compare"         :v-adjust 0.0)
+    (ediff-mode                all-the-icons-octicon "git-compare"         :v-adjust 0.0)
+    (comint-mode               all-the-icons-faicon "terminal"             :v-adjust 0.0)
+    (eww-mode                  all-the-icons-faicon "firefox"              :v-adjust -0.1)
+    (org-agenda-mode           all-the-icons-octicon "checklist"           :v-adjust 0.0)
+    (cfw:calendar-mode         all-the-icons-octicon "calendar"            :v-adjust 0.0)
+    (ibuffer-mode              all-the-icons-faicon "files-o"              :v-adjust 0.0)
+    (messages-buffer-mode      all-the-icons-faicon "stack-overflow"       :v-adjust -0.1)
+    (help-mode                 all-the-icons-faicon "info"                 :v-adjust -0.1)
+    (benchmark-init/tree-mode  all-the-icons-octicon "dashboard"           :v-adjust 0.0)
+    (jenkins-mode              all-the-icons-fileicon "jenkins")
+    (magit-popup-mode          all-the-icons-alltheicon "git")
+    (magit-status-mode         all-the-icons-alltheicon "git")
+
+    ;; Special matcher for Web Mode based on the `web-mode-content-type' of the current buffer
+    (web-mode                 all-the-icons--web-mode-icon)
     ))
 
 ;; ====================
@@ -431,8 +440,11 @@
         (search-forward-regexp module-search (point-max) t)))))
 
 ;; Icon functions
-(defun all-the-icons-icon-for-dir (dir &optional chevron)
+(defun all-the-icons-icon-for-dir (dir &optional chevron padding)
   "Format an icon for DIR with CHEVRON similar to tree based directories.
+
+If PADDING is provided, it will prepend and separate the chevron
+and directory with PADDING.
 
 Produces different symbols by inspeting DIR to distinguish
 symlinks and git repositories which do not depend on the
@@ -440,6 +452,7 @@ directory contents"
   (let* ((matcher (all-the-icons-match-to-alist (file-name-base dir) all-the-icons-dir-icon-alist))
          (path (expand-file-name dir))
          (chevron (or (all-the-icons-octicon (format "chevron-%s" chevron) :height 0.8 :v-adjust -0.1) ""))
+         (padding (or padding "\t"))
          (icon (cond
                 ((file-symlink-p path)
                  (all-the-icons-octicon "file-symlink-directory" :height 1.2))
@@ -448,7 +461,7 @@ directory contents"
                 ((file-exists-p (format "%s/.git" path))
                  (all-the-icons-octicon "repo" :height 1.2))
                 (t (apply (car matcher) (cdr matcher))))))
-    (format "\t%s\t%s " chevron icon)))
+    (format "%s%s%s%s " padding chevron padding icon)))
 
 (defun all-the-icons-icon-for-buffer ()
   "Get the formatted icon for the current buffer.
@@ -462,6 +475,24 @@ icon."
 (defun all-the-icons-icon-family-for-buffer ()
   "Get the icon font family for the current buffer."
   (all-the-icons--icon-info-for-buffer "family"))
+
+(defun all-the-icons--web-mode-icon () "Get icon for a `web-mode' buffer." (all-the-icons--web-mode))
+(defun all-the-icons--web-mode-icon-family () "Get icon faily for a `web-mode' buffer." (all-the-icons--web-mode t))
+(defun all-the-icons--web-mode (&optional family)
+  "Return icon or FAMILY for `web-mode' based on `web-mode-content-type'."
+  (cond
+   ((equal web-mode-content-type "jsx")
+    (if family (all-the-icons-fileicon-family) (all-the-icons-fileicon "jsx-2")))
+   ((equal web-mode-content-type "javascript")
+    (if family (all-the-icons-alltheicon-family) (all-the-icons-alltheicon "javascript")))
+   ((equal web-mode-content-type "json")
+    (if family (all-the-icons-alltheicon-family) (all-the-icons-alltheicon "less")))
+   ((equal web-mode-content-type "xml")
+    (if family (all-the-icons-faicon-family) (all-the-icons-faicon "file-code-o")))
+   ((equal web-mode-content-type "css")
+    (if family (all-the-icons-alltheicon-family) (all-the-icons-alltheicon "css3")))
+   (t
+    (if family (all-the-icons-alltheicon-family) (all-the-icons-alltheicon "html5")))))
 
 ;; Icon Functions
 
@@ -568,7 +599,9 @@ FAMILY is the font family to use for the icons."
                (v-adjust (* all-the-icons-scale-factor (or (plist-get args :v-adjust) all-the-icons-default-adjust)))
                (family ,family))
            (propertize icon
-                       'face `(:family ,family :height ,height :inherit ,other-face)
+                       'face (if other-face
+                               `(:family ,family :height ,height :inherit ,other-face)
+                               `(:family ,family :height ,height))
                        'display `(raise ,v-adjust))))))
 
 (define-icon alltheicon all-the-icons-data/alltheicons-alist "all-the-icons")
