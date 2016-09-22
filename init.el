@@ -43,7 +43,6 @@
 (electric-pair-mode 1)                     ;; turn on pair auto complete
 (show-paren-mode t)                        ;; display paren match
 (global-auto-revert-mode 1)                ;; 当文件被修改后，自动revert内容
-(setq-default tab-width 2)
 
 ;; backup
 (setq backup-directory-alist `(("." . "~/.emacs.d/.saves")))
