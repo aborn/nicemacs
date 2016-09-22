@@ -81,7 +81,9 @@
 (setq neo-show-hidden-files nil)
 (setq neo-show-hidden-files nil)   ;; 不显示隐藏文件
 (setq neo-force-change-root t)     ;; 当root改变时，是否强制相应改变而不需要询问
-(setq neo-theme 'icons)
+(if window-system
+    (setq neo-theme 'icons)
+  (setq neo-theme 'arrow))
 
 ;; (setq neo-dont-be-alone t)
 (require 'nice-helm-config)
