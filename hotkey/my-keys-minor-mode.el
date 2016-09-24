@@ -8,11 +8,8 @@
 ;; 全局的key-binding放在这里
 (defvar my-keys-minor-mode-map
   (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-o") 'ace-window)
     (define-key map (kbd "C-j") 'helm-buffers-list)
     (define-key map (kbd "M-j") 'ido-find-file)
-    (define-key map (kbd "C-i") 'aborn/just-one-space)
-    (define-key map [C-backspace] 'aborn/backward-kill-word)
     (define-key map (kbd "C-;") 'move-forward-by-five)
     (define-key map (kbd "C-:") 'move-backward-by-five)
     (define-key map (kbd "C-'") 'move-middle-of-line)
