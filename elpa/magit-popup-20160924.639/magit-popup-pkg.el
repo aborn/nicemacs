@@ -1,0 +1,1 @@
+(define-package "magit-popup" "20160924.639" "Define prefixinfixsuffix command combos"  '((emacs "24.4") (async "20160711.223") (dash "20160820.501") ) :url "https://github.com/magit/magit" :keywords '("bindings" ))
