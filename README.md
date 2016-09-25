@@ -1,13 +1,13 @@
 # nicemacs
 A simple, stable and efficient emacs configuration!  
 
-## emacs 
-24.5+
+## Emacs version
+24.5+ (24.5, 25.1)
 
 ## Who can benefit from nicemacs?
-1. emacs newbie  
-2. elpa package release, keep stable, without elpa dependency  
-3. keep simple, install from one command line.  
+1. emacs newbie.  
+2. users who don't want to depend on any elpa archives.  
+3. anyone who need a simple comfiguration and installation.  
 
 ## Installation
 For unix-like system (mac & linux), open terminal, execute following command  
@@ -15,6 +15,10 @@ For unix-like system (mac & linux), open terminal, execute following command
 $ sh -c "$(curl -fsSL https://raw.github.com/aborn/nicemacs/master/scripts/install.sh)"
 ```
 For windows user, use git clone this project as .emacs.d
+
+## Screenshots
+mac osx  
+![](screenshots/mac.png "mac osx")
 
 English version readme ends here. Chinese readme provided as follows.
 
@@ -41,8 +45,3 @@ $ sh -c "$(curl -fsSL https://raw.github.com/aborn/nicemacs/master/scripts/insta
 ## 使用注意
 1. emacs新用户，这些用户可以基于这个最基本配置进行添加自己的配置，即使不添加自己的配置也能使用
 2. 不适合emacs老手
-
-## Screenshots
-mac osx  
-![](screenshots/mac.png "mac osx")
-
