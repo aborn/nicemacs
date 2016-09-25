@@ -1,4 +1,5 @@
 # nicemacs
+A simple, stable and efficient emacs configuration!  
 Yeah, nice emacs, 不折腾！！
 
 ## 为什么?
