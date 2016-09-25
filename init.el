@@ -36,12 +36,15 @@
 
 ;; -----------------------------------------------------------------------------
 ;; 一些最基本的配置
+(setq gc-cons-threshold 100000000)         ;; 100MB
 (prefer-coding-system 'utf-8)
 (tool-bar-mode -1)                         ;; 关闭toobar
 (menu-bar-mode -1)                         ;; turn off menu-bar
 (toggle-frame-maximized)                   ;; 最大化frame
 (electric-pair-mode 1)                     ;; turn on pair auto complete
 (show-paren-mode t)                        ;; display paren match
+(global-auto-revert-mode 1)                ;; 当文件被修改后，自动revert内容
+(ivy-mode 1)                               ;; 打开ivy-mode
 
 ;; backup
 (setq backup-directory-alist `(("." . "~/.emacs.d/.saves")))
@@ -80,10 +83,20 @@
 (setq neo-show-hidden-files nil)
 (setq neo-show-hidden-files nil)   ;; 不显示隐藏文件
 (setq neo-force-change-root t)     ;; 当root改变时，是否强制相应改变而不需要询问
+(if window-system
+    (setq neo-theme 'icons)
+  (setq neo-theme 'arrow))
 
 ;; (setq neo-dont-be-alone t)
 (require 'nice-helm-config)
 (load-file "~/.emacs.d/hotkey/nice-key.el")
+
+;;; 全局的key-binding放在这里
+(require 'my-keys-minor-mode)
+(my-keys-minor-mode 1)
+(add-hook 'minibuffer-setup-hook #'my-keys-turn-off)
+(add-hook 'after-load-functions 'my-keys-have-priority)
+
 ;;; init.el ends here
 ;; -----------------------------------------------------------------------------
 ;; +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -95,7 +108,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (neotree spaceline ace-jump-helm-line ace-jump-mode company doom-themes))))
+    (ivy neotree spaceline ace-jump-helm-line ace-jump-mode company doom-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

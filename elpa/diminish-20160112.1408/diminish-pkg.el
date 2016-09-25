@@ -1,0 +1,1 @@
+(define-package "diminish" "20160112.1408" "Diminished modes are minor modes with no moine display" 'nil 'url: "https://github.com/myrjola/diminish.el" :keywords '(" extensions" " diminish" " minor" " codeprose"))

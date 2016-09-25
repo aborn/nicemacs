@@ -20,5 +20,5 @@ $ sh -c "$(curl -fsSL https://raw.github.com/aborn/nicemacs/master/scripts/insta
 
 ## 界面
 mac osx
-![](images/mac.png "mac osx")
+![](screenshots/mac.png "mac osx")
 
