@@ -7,7 +7,7 @@ A simple, stable and efficient emacs configuration!
 ## Who can benefit from nicemacs?
 1. emacs newbie.  
 2. users who don't want to depend on any elpa archives.  
-3. anyone who need a simple comfiguration and installation.  
+3. anyone who need a simple configuration and installation.  
 
 ## Installation
 For unix-like system (mac & linux), open terminal, execute following command  
