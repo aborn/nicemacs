@@ -6,6 +6,7 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+
 ;; +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ;; -----------------------------------------------------------------------------
 ;;; init.el
@@ -90,6 +91,9 @@
 ;; (setq neo-dont-be-alone t)
 (require 'nice-helm-config)
 (load-file "~/.emacs.d/hotkey/nice-key.el")
+
+;; 打开emacs作为edit server，这样在terminal下可以用emacsclient调用
+(unless (server-running-p) (server-start))
 
 ;;; 全局的key-binding放在这里
 (require 'my-keys-minor-mode)
